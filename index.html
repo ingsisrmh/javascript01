@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+	function hacer_click()
+	{
+		alert("Hiciste un click sobre mí");
+	}
+
+	function hacer_hover()
+	{
+		alert("El puntero está encima de mí");
+	}
+
+	function salir_del_hover()
+	{
+		alert("¡Adios!");
+	}
+
+	function cargar_pagina()
+	{
+		alert("El sitio web se cargó");
+	}
+	</script>
+</head>
+	
+<body onload="cargar_pagina()">
+	<h1>Eventos en Javascript<h1>
+
+	<form>
+		<input type="button" value="¡Haz click sobre mí!"  onmouseout="salir_del_hover()" onmouseover="hacer_hover()" onclick="hacer_click()"/>
+	</form>
+</body>
+
+</html>
